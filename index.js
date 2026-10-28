@@ -32,25 +32,38 @@
 // };
 
 // arrow function calcular area do triangulo
+const calcularATriangulo = (a, b) => {
+    return (parseFloat(a) * parseFloat(b)) / 2
+}
 
-// const calcularATriangulo = (a, b) => {
-//     return (parseFloat(a) * parseFloat(b)) / 2
-// }
+alert (calcularATriangulo(
+    prompt("Base:"),
+    prompt("Altura:")
+))
 
-// alert (calcularATriangulo(
-//     prompt("Base:"),
-//     prompt("Altura:")
-// )) 
+// arrow function calcular area do circulo
+const calcularACirculo = (a) => {
+    let raio = parseFloat(a)
+    const pi = 3.1415
+    let area = pi * (raio * raio)
 
-const formatarMoeda = (a) => {
-    let valor = parseFloat(a)
-
-    
     return (
-        `R$ ${valor}`
+        area
     )
 }
 
-alert (formatarMoeda(
-        prompt("Valor:")
-    ))
+alert(calcularACirculo(
+    prompt("Raio:")
+))
+
+
+// const formatarMoeda = (a) => {
+//     let valor = parseFloat(a)
+//     return (
+//         `R$ ${valor}`
+//     )
+// }
+
+// alert (formatarMoeda(
+//         prompt("Valor:")
+//     ))
